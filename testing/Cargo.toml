@@ -5,7 +5,7 @@ authors = ["Dirkjan Ochtman <dirkjan@ochtman.nl>"]
 workspace = ".."
 
 [features]
-default = ["actix"]
+default = []
 with-rocket = ["rocket", "rocket_codegen", "askama/with-rocket"]
 actix = ["actix-web", "bytes", "askama/with-actix-web"]
 

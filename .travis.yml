@@ -13,7 +13,7 @@ before_script:
 - rustup component add rustfmt-preview
 
 script:
-- cargo test --all
+- cargo test --all --features "testing/actix"
 - if [[ "${TRAVIS_RUST_VERSION}" == stable ]]; then
     cargo fmt -- --check;
   fi
